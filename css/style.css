@@ -13,6 +13,11 @@ img {
 
 body {
     font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+a {
+    text-decoration: none;
 }
 
 /* UTILITIES */
@@ -64,9 +69,13 @@ nav {
     position: relative;
 }
 
-/* MAIN SCREEN*/
+ul {
+    list-style-type: none;
+}
 
-/* Header */
+/* MAIN */
+
+/* HEADER */
 
 .main-header {
     background-color: #080B12;
@@ -83,6 +92,13 @@ header .upgrade {
     border-radius: 25px;
     padding: 15px 35px;
     line-height: 80px;
+}
+
+/* CONTENT */
+
+/* nav */
+.content-nav {
+    
 }
 
 /* FOOTER */
