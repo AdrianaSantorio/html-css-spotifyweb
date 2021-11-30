@@ -41,15 +41,14 @@ main {
 nav {
     height: 100%;
     padding: 5px;
-
-
+    position: relative;
 }
 
 /* MAIN SCREEN*/
 
 .main-header {
     background-color: #080B12;
-    height: 60px;
+    height: 80px;
     width: 100%;
 }
 
