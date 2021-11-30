@@ -36,7 +36,16 @@ main {
     background-color: darkred;
 }
 
-/* MAIN */
+/* SIDEBAR */
+
+nav {
+    height: 100%;
+    padding: 5px;
+
+
+}
+
+/* MAIN SCREEN*/
 
 .main-header {
     background-color: #080B12;
