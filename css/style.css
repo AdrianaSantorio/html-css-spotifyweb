@@ -20,6 +20,21 @@ img {
 
 /* BODY */
 
+.flex-wrapper.main {
+    flex: row;
+    align-items: stretch;
+}
+
+.sidebar {
+    background-color: darksalmon;
+    flex-basis: 50px;
+}
+
+main {
+    flex-grow: 1;
+    background-color: darkred;
+}
+
 /* FOOTER */
 
 footer {
