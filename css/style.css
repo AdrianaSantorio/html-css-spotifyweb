@@ -16,6 +16,10 @@ body {
     color: white;
 }
 
+ul {
+    list-style-type: none;
+}
+
 a {
     text-decoration: none;
 }
@@ -35,7 +39,7 @@ a {
 }
 
  
-.flex-wrapper {
+.flex {
     display: flex ;
 }
 
@@ -45,7 +49,7 @@ a {
 
 /* BODY */
 
-.flex-wrapper.main {
+.flex.main {
     flex-direction: row;
     align-items: stretch;
     height: calc(100vh - 70px);
@@ -58,7 +62,7 @@ a {
 
 main {
     flex-grow: 1;
-    background-color: darkred;
+    background-color: #141922;
 }
 
 /* SIDEBAR */
@@ -67,10 +71,6 @@ nav {
     height: 100%;
     padding: 5px;
     position: relative;
-}
-
-ul {
-    list-style-type: none;
 }
 
 /* MAIN */
@@ -98,7 +98,23 @@ header .upgrade {
 
 /* nav */
 .content-nav {
+    text-transform: uppercase;
     
+}
+
+.content-nav ul.flex {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.content-nav li {
+    margin: 12px;
+}
+
+.content-nav a {
+    color: #707278;
+    font-weight: 600;
 }
 
 /* FOOTER */
