@@ -13,9 +13,26 @@ img {
 
 
 /* UTILITIES */
+
+
+/* float */
+.clearifx::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.float-right {
+    float: right;
+}
+
  
 .flex-wrapper {
     display: flex ;
+}
+
+.text-align-right {
+    text-align: right;
 }
 
 /* BODY */
@@ -46,10 +63,23 @@ nav {
 
 /* MAIN SCREEN*/
 
+/* Header */
+
 .main-header {
     background-color: #080B12;
     height: 80px;
     width: 100%;
+    padding: 5px;
+}
+
+header .upgrade {
+    background-color: transparent;
+    color: white;
+    text-transform: uppercase;
+    border: 1px solid white;
+    border-radius: 25px;
+    padding: 15px 35px;
+    line-height: 80px;
 }
 
 /* FOOTER */
