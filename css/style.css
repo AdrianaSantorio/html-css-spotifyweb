@@ -49,7 +49,7 @@ a {
 
 /* BODY */
 
-.flex.main {
+.flex.upper-content {
     flex-direction: row;
     align-items: stretch;
     max-height: calc(100vh - 70px);
