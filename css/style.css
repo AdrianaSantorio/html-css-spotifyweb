@@ -57,6 +57,10 @@ a {
     text-align: right;
 }
 
+.text-align-center {
+    text-align: center;
+}
+
 /* BODY */
 
 .flex.upper-content {
@@ -141,6 +145,26 @@ a {
     display: none;
 }
 
+.profile li {
+    margin:10px 0;
+}
+
+.download {
+    font-size: 12px;
+    text-align: center;
+}
+
+#download {
+    width: 20px;
+}
+
+.user-image {
+    display: inline-block;
+    background-color: #808080;
+    border-radius: 50%;
+    height: 40px;
+    margin-right: 5px;
+}
 
 
 /* MAIN */
@@ -259,6 +283,11 @@ footer {
 
     .profile hr {
         display: block;
+    }
+
+    .download {
+        font-size: 12px;
+        text-align: left;
     }
 
 }
