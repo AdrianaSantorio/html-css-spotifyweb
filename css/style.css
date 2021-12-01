@@ -59,18 +59,24 @@ a {
 
 .sidebar {
     background-color: darksalmon;
-    flex-basis: 50px;
+    flex-basis: 60px;
     flex-shrink: 0;
+    padding: 10px;
 }
 
 .sidebar nav {
     height: 100%;
-    padding: 5px;
     flex-direction: column;
     justify-content: space-between;
 }
 
+.sidebar nav ul {
 
+}
+
+.sidebar img {
+    width: 40px;
+}
 
 
 /* MAIN */
@@ -167,6 +173,9 @@ footer {
 
 @media screen and (min-width:576px) {
 
+    .sidebar {
+        flex-basis: 200px;
+    }
     
 }
 
