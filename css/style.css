@@ -58,6 +58,7 @@ a {
 .sidebar {
     background-color: darksalmon;
     flex-basis: 50px;
+    /* attenzione che siccome ci ho messo flex basis devo metterci probabilmente flex-shrink se il contenuto non basta */
 }
 
 main {
@@ -82,6 +83,7 @@ nav {
     height: 80px;
     width: 100%;
     padding: 5px;
+    /* invece questo è fixed aiut */
 }
 
 header .upgrade {
@@ -145,6 +147,7 @@ header .upgrade {
 /* FOOTER */
 
 footer {
+    /* tutta la roba relativa alla posizione è completamente inutile */
     width: 100%;
     height: 70px;
     background-color: #282828;
@@ -153,6 +156,7 @@ footer {
     left: 0;
 }
 
+/* controllare tutte le altezze che ho fatto un casino */
 
 /* MEDIA QUERY */
 
