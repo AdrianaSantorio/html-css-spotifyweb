@@ -166,6 +166,8 @@ a {
     margin-right: 5px;
 }
 
+/* perchè se profile è una section invece che un div mi si spacca */
+
 
 /* MAIN */
 
@@ -179,22 +181,21 @@ main {
 .main-header {
     background-color: rgba(8, 11, 18, 0.3);
     height: 80px;
-    width: 100%;
-    padding: 5px;
+    width: calc(100% -80px);
+    padding-right: 10px;
     position: fixed;
-    top: 0;
+    top:0;
+    right: 0;
     text-align: right;
 }
 
 header .upgrade {
     background-color: transparent;
-    color: white;
     text-transform: uppercase;
     border: 1px solid white;
     border-radius: 25px;
     padding: 15px 35px;
     line-height: 80px;
-    margin-right:50px;
 }
 
 /* CONTENT */
@@ -261,6 +262,10 @@ footer {
 
 @media screen and (min-width:576px) {
 
+    .main-header {
+        width: calc(100%-220px);
+    }
+    
     .sidebar {
         flex-basis: 220px;
     }
