@@ -52,7 +52,7 @@ a {
 .flex.main {
     flex-direction: row;
     align-items: stretch;
-    height: calc(100vh - 70px);
+    max-height: calc(100vh - 70px);
 }
 
 .sidebar {
@@ -96,10 +96,9 @@ header .upgrade {
 
 /* CONTENT */
 
-/* nav */
+/* content nav */
 .content-nav {
     text-transform: uppercase;
-    
 }
 
 .content-nav ul.flex {
@@ -115,6 +114,32 @@ header .upgrade {
 .content-nav a {
     color: #707278;
     font-weight: 600;
+}
+
+/* content gallery */
+
+.content {
+    max-height: calc(100vh - 150px);
+    overflow-y: auto;
+}
+
+.content-gallery .flex {
+    align-items: flex-start;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.content-gallery section {
+    width: 100%;
+}
+
+.content-gallery .card {
+    width: 50%;
+}
+
+.card-text {
+    overflow-wrap: break-word;
 }
 
 /* FOOTER */
