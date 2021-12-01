@@ -192,6 +192,8 @@ a {
     margin-right: 5px;
 }
 
+/* perchè tutte queste a non me le legge come a? */
+
 /* perchè se profile è una section invece che un div mi si spacca */
 
 
@@ -320,17 +322,28 @@ footer {
     margin-bottom: 2px;
 }
 
+.track-actions button {
+    background-color: transparent;
+    color: #707278;
+    border: none;
+    font-size: 16px;
+}
+
 /* controls */
 .controls {
     flex-grow: 1;
     padding-top: 10px;
 }
 
-.controls .fas {
+.controls button {
+    background-color: transparent;
+    color: white;
+    border: none;
     margin: 0 10px;
     font-size: 18px;
     vertical-align: middle;
 }
+
 
 .controls .play {
     font-size: 32px;
