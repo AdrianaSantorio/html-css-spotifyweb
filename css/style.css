@@ -204,7 +204,7 @@ main {
 .main-header {
     background-color: rgba(8, 11, 18, 0.3);
     height: 80px;
-    width: calc(100% -80px);
+    width: calc(100% - 80px);
     padding-right: 10px;
     position: fixed;
     top:0;
@@ -314,11 +314,11 @@ footer {
 .controls {
     flex-grow: 1;
     padding-top: 10px;
-    font-size: 14px;
+    font-size: 18px;
 }
 
 .controls .fas {
-    margin: 0 5px;
+    margin: 0 10px;
 }
 
 /* volume */
@@ -334,7 +334,7 @@ footer {
     /* header */
     
     .main-header {
-        width: calc(100%-220px);
+        width: calc(100% - 220px);
     }
     
     /* sidebar */
