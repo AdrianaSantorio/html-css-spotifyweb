@@ -247,6 +247,14 @@ header .upgrade {
     font-weight: 600;
     text-transform: uppercase;
 }
+
+.content-nav hr {
+    height: 2px;
+    width: 35%;
+    background-color: #ACFE2E;
+    border: none;
+    margin: 3px auto;
+}
 /* to do: centralizzare uppercase? */
 
 
