@@ -52,30 +52,33 @@ a {
 .flex.upper-content {
     flex-direction: row;
     align-items: stretch;
-    max-height: calc(100vh - 70px);
+    height: calc(100vh - 70px);
 }
+
+/* SIDEBAR */
 
 .sidebar {
     background-color: darksalmon;
     flex-basis: 50px;
-    /* attenzione che siccome ci ho messo flex basis devo metterci probabilmente flex-shrink se il contenuto non basta */
+    flex-shrink: 0;
 }
+
+.sidebar nav {
+    height: 100%;
+    padding: 5px;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+
+
+/* MAIN */
 
 main {
     flex-grow: 1;
     background-color: #141922;
 }
-
-/* SIDEBAR */
-
-.sidebar nav {
-    height: 100%;
-    padding: 5px;
-    position: relative;
-    /* sicuramente da rivedere */
-}
-
-/* MAIN */
 
 /* HEADER */
 
@@ -85,7 +88,7 @@ main {
     width: 100%;
     padding: 5px;
     position: fixed;
-    top:0;
+    top: 0;
     text-align: right;
 }
 
@@ -110,9 +113,6 @@ header .upgrade {
 }
 
 /* content nav */
-.content-nav {
-    text-transform: uppercase;
-}
 
 .content-nav ul.flex {
     flex-direction: row;
@@ -127,14 +127,18 @@ header .upgrade {
 .content-nav a {
     color: #707278;
     font-weight: 600;
+    text-transform: uppercase;
 }
+/* to do: centralizzare uppercase? */
+
 
 /* content gallery */
 
 
 
-.content-gallery .flex {
+/* .content-gallery .flex {
     align-items: flex-start;
+    justify-content: center;
     flex-direction: row;
     width: 100%;
     flex-wrap: wrap;
@@ -146,11 +150,11 @@ header .upgrade {
 
 .content-gallery .card {
     width: 50%;
-}
+} */
 
-.card-text {
+/* .card-text h3 {
     overflow-wrap: break-word;
-}
+} */
 
 /* FOOTER */
 
@@ -158,8 +162,6 @@ footer {
     height: 70px;
     background-color: #282828;
 }
-
-/* controllare tutte le altezze che ho fatto un casino */
 
 /* MEDIA QUERY */
 
