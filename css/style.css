@@ -97,13 +97,13 @@ a {
     background-color: black;
     flex-basis: 80px;
     flex-shrink: 0;
-    padding: 20px;
+    padding: 10px 20px;
     z-index: -1;
 }
 
 .sidebar #logo {
     display: none;
-    margin: 5px 0;
+    margin: 5px 0 10px;
 }
 
 .sidebar nav {
@@ -309,16 +309,21 @@ footer {
     margin-bottom: 2px;
 }
 
-
 /* controls */
 .controls {
     flex-grow: 1;
     padding-top: 10px;
-    font-size: 18px;
 }
 
 .controls .fas {
     margin: 0 10px;
+    font-size: 18px;
+    vertical-align: middle;
+}
+
+.controls .play {
+    font-size: 32px;
+    vertical-align: middle;
 }
 
 /* volume */
