@@ -43,6 +43,16 @@ a {
     display: flex ;
 }
 
+/* text */
+
+/* .text-gray {
+    color: #707278;
+}
+
+.text-white {
+    color: white;
+} */
+
 .text-align-right {
     text-align: right;
 }
@@ -74,8 +84,17 @@ a {
 
 }
 
+.sidebar nav li {
+    margin: 5px 0;
+}
+
 .sidebar img {
     width: 40px;
+    vertical-align: middle;
+}
+
+.sidebar nav span {
+    display: none;
 }
 
 
@@ -175,6 +194,10 @@ footer {
 
     .sidebar {
         flex-basis: 200px;
+    }
+    
+    .sidebar nav span {
+        display: inline;
     }
     
 }
