@@ -65,6 +65,10 @@ a {
     text-align: center;
 }
 
+.v-align-middle {
+    vertical-align: middle;
+}
+
 /* width */
 
 .w-25 {
@@ -278,15 +282,15 @@ footer {
 }
 
 .now-playing {
-
+    flex-basis: 30%;
 }
 
 .controls {
-
+    flex-grow: 1;
 }
 
 .volume {
-
+    flex-basis: 30%;
 }
 
 /* MEDIA QUERY */
