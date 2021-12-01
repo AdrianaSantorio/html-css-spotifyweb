@@ -94,6 +94,10 @@ a {
     vertical-align: middle;
 }
 
+.sidebar nav li {
+    font-weight: 600;
+}
+
 .sidebar nav span {
     display: none;
     vertical-align: middle;
@@ -102,7 +106,6 @@ a {
 .main-menu li {
     margin: 5px 0;
 }
-
 
 /* playlist */
 
@@ -117,7 +120,6 @@ a {
 
 .playlist li {
     margin:20px 0;
-    font-weight: 600;
 }
 
 .playlist .fa-plus {
@@ -128,6 +130,18 @@ a {
     margin-right: 5px;
     vertical-align: middle;
 }
+
+/* profile */
+
+.profile hr {
+    height: 1px;
+    background-color: #707278;
+    border: none;
+    margin: 10px 0;
+    display: none;
+}
+
+
 
 /* MAIN */
 
@@ -240,6 +254,10 @@ footer {
     }
 
     .playlist {
+        display: block;
+    }
+
+    .profile hr {
         display: block;
     }
 
