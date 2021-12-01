@@ -88,17 +88,19 @@ a {
     margin: 5px 0;
 }
 
-.sidebar img {
+.sidebar ul img {
     width: 40px;
     vertical-align: middle;
 }
 
 .sidebar nav span {
     display: none;
+    vertical-align: middle;
 }
 
 .sidebar #logo {
     display: none;
+    margin: 5px 0;
 }
 
 /* MAIN */
