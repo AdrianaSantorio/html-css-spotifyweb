@@ -68,10 +68,11 @@ main {
 
 /* SIDEBAR */
 
-nav {
+.sidebar nav {
     height: 100%;
     padding: 5px;
     position: relative;
+    /* sicuramente da rivedere */
 }
 
 /* MAIN */
@@ -79,12 +80,13 @@ nav {
 /* HEADER */
 
 .main-header {
-    background-color: #080B12;
+    background-color: rgba(8, 11, 18, 0.3);
     height: 80px;
     width: 100%;
     padding: 5px;
     position: fixed;
     top:0;
+    text-align: right;
 }
 
 header .upgrade {
@@ -95,6 +97,7 @@ header .upgrade {
     border-radius: 25px;
     padding: 15px 35px;
     line-height: 80px;
+    margin-right:50px;
 }
 
 /* CONTENT */
@@ -122,7 +125,7 @@ header .upgrade {
 /* content gallery */
 
 .content {
-    max-height: calc(100vh - 150px);
+    height: calc(100vh - 150px);
     overflow-y: auto;
 }
 
