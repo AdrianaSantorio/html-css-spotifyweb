@@ -121,14 +121,17 @@ a {
     vertical-align: middle;
 }
 
-.sidebar nav li {
+.sidebar nav li a {
     font-weight: 600;
+    color: #707278;
 }
 
 .sidebar nav span {
     display: none;
     vertical-align: middle;
 }
+
+/* main menu */
 
 .main-menu li {
     margin: 5px 0;
