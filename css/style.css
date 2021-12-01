@@ -297,7 +297,7 @@ footer {
 
 /* now playing */
 .now-playing {
-    flex-basis: 30%;
+    flex-basis: 25%;
     align-items: center;
     padding: 10px;
     flex-shrink: 0;
@@ -305,7 +305,6 @@ footer {
 
 .track-cover {
     flex-basis: 60px;
-    padding: 0 5px 0 5px;
 }
 
 .track-info {
@@ -326,13 +325,14 @@ footer {
     background-color: transparent;
     color: #707278;
     border: none;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 /* controls */
 .controls {
     flex-grow: 1;
     padding-top: 10px;
+    margin: 0 20px;
 }
 
 .controls button {
@@ -350,10 +350,69 @@ footer {
     vertical-align: middle;
 }
 
+/* progress bar */
+
+.progress.flex {
+    margin-top: 15px;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.progress span {
+    font-size: 12px;
+    font-weight: 600;
+} 
+
+.controls .progress-bar {
+    height: 5px;
+    background-color: #585858;
+    border-radius: 3px;
+    position: relative;
+    flex-grow: 1;
+    margin: 0 10px
+}
+
+.progress-bar .progress-value {
+    height: 5px;
+    background-color: #BDBDBD;
+    border-radius: 3px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20%;
+}
+
+
+
 /* volume */
 
 .volume {
-    flex-basis: 25%;
+    flex-basis: 30%;
+    flex-direction: row;
+    align-items: center;
+}
+
+.volume * {
+    margin-right: 7px;
+}
+
+.volume-bar {
+    height: 5px;
+    background-color: #585858;
+    border-radius: 3px;
+    position: relative;
+    flex-grow: 1;
+}
+
+.volume-bar .volume-value {
+    height: 5px;
+    background-color: #BDBDBD;
+    border-radius: 3px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20%;
 }
 
 /* MEDIA QUERY */
@@ -363,13 +422,13 @@ footer {
     /* header */
     
     .main-header {
-        width: calc(100% - 220px);
+        width: calc(100% - 230px);
     }
     
     /* sidebar */
 
     .sidebar {
-        flex-basis: 220px;
+        flex-basis: 230px;
     }
     
     .sidebar nav span {
@@ -399,26 +458,37 @@ footer {
 
     /* footer */
 
-    .now-playing {
-        flex-basis: 220px;
-    }
-
     .track-actions .fa-heart {
         margin-bottom: 0;
         margin-right: 5px;
     }
 
-    
+    .volume * {
+        margin-right: 15px;
+    }
     
 
 }
 
 @media screen and (min-width:768px) {
 
-    
+    /* footer */
+
+    .now-playing {
+        flex-basis: 230px;
+    }
+
+    .volume {
+        flex-basis:230px;
+    }
+
+    .volume * {
+        margin-right: 20px;
+    }
 }
 
 @media screen and (min-width:992px) {
 
-    
+    .controls {
+        margin:0 150px;}
 }
