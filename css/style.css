@@ -147,13 +147,8 @@ header .upgrade {
 /* FOOTER */
 
 footer {
-    /* tutta la roba relativa alla posizione è completamente inutile */
-    width: 100%;
     height: 70px;
     background-color: #282828;
-    position: fixed;
-    bottom: 0;
-    left: 0;
 }
 
 /* controllare tutte le altezze che ho fatto un casino */
