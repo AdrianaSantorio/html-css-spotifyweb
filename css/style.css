@@ -354,11 +354,11 @@ header .upgrade {
 }
 
 .content-gallery img:hover {
-    filter: brightness(70%);
+    filter: brightness(60%);
 }
 
-.content-gallery figure::after {
-    display: none;
+.content-gallery figure:hover::after {
+    display: inline-block;
     font-family: "Font Awesome 5 Free"; 
     font-weight: 900; 
     content: "\f144 ";
@@ -369,9 +369,6 @@ header .upgrade {
     font-size: 36px;
 }
 
-.content-gallery figure:hover::after {
-    display: inline-block;
-}
 
 
 
