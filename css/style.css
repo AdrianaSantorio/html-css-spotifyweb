@@ -89,7 +89,13 @@ a:hover {
 
 /* effetti */
 
+.scale {
+    transition: transform (2s);
+}
+/* ? */
+
 .scale:hover {
+    transition: transform (2s);
     transform: scale(1.2);
 }
 
@@ -111,6 +117,26 @@ a:hover {
     left: 0;
 }
 
+.value:hover {
+    background-color: chartreuse;
+}
+
+.marker {
+    display: none;
+    background-color: white;
+    height:8px;
+    width: 8px;
+    border-radius: 50%;
+    position: absolute;
+    top:50%;
+    right:0;
+    transform: translate(50% , -50%);
+}
+
+.value:hover .marker {
+    display: inline-block;
+   
+}
 
 /* BODY */
 
@@ -412,7 +438,7 @@ footer {
     align-items: center;
 }
 
-.volume * {
+.volume>* {
     margin-right: 7px;
 }
 
@@ -476,7 +502,7 @@ footer {
         margin-right: 5px;
     }
 
-    .volume * {
+    .volume>* {
         margin-right: 15px;
     }
     
@@ -495,7 +521,7 @@ footer {
         flex-basis:230px;
     }
 
-    .volume * {
+    .volume>* {
         margin-right: 10px;
     }
 }
