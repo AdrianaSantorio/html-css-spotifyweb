@@ -153,7 +153,6 @@ a:hover {
     flex-basis: 80px;
     flex-shrink: 0;
     padding: 10px 20px;
-    z-index: -1;
 }
 
 .sidebar #logo {
@@ -285,7 +284,7 @@ header .upgrade {
 /* CONTENT */
 
 .content {
-    height: calc(100vh - 150px);
+    height: calc(100vh - 100px);
     overflow-y: auto;
     padding: 90px 20px;
 
@@ -345,11 +344,36 @@ header .upgrade {
     overflow-wrap: break-word;
 }
 
+.content-gallery figure {
+    position: relative;
+}
+
 .popular figure {
     border-radius: 50%;
     overflow: hidden;
 }
 
+.content-gallery figure:hover {
+    filter: brightness(70%);
+}
+
+.content-gallery figure::after {
+    display: none;
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900; 
+    content: "\f144 ";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 36px;
+    
+}
+
+.content-gallery figure:hover::after {
+    display: inline-block;
+    filter: brightness(120%);
+}
 
 
 /* FOOTER */
@@ -358,6 +382,8 @@ footer {
     height: 100px;
     background-color: #282828;
     flex-direction: row;
+    position: relative;
+    z-index: 1;
 }
 
 /* now playing */
