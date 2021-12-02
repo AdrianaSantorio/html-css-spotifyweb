@@ -323,25 +323,32 @@ header .upgrade {
 
 
 
-/* .content-gallery .flex {
+.content-gallery .flex {
     align-items: flex-start;
-    justify-content: center;
+    justify-content: flex-start;
     flex-direction: row;
-    width: 100%;
     flex-wrap: wrap;
+    margin: 15px -15px;
 }
 
 .content-gallery section {
-    width: 100%;
+    margin: 15px 0;
 }
 
 .content-gallery .card {
-    width: 50%;
-} */
+    flex-basis: 50%;
+    padding: 15px;
+    text-align: center;
+} 
 
-/* .card-text h3 {
+ .card-text {
     overflow-wrap: break-word;
-} */
+}
+
+.popular figure {
+    border-radius: 50%;
+    overflow: hidden;
+}
 
 /* FOOTER */
 
@@ -511,6 +518,13 @@ footer {
 
 @media screen and (min-width:768px) {
 
+    /* content gallery */
+
+    .content-gallery .card {
+        flex-basis: 25%;
+    } 
+    
+
     /* footer */
 
     .now-playing {
@@ -527,6 +541,11 @@ footer {
 }
 
 @media screen and (min-width:992px) {
+
+    .content-gallery .card {
+        flex-basis: calc(100% / 6);
+    } 
+    
 
     .controls {
         margin:0 150px;}
