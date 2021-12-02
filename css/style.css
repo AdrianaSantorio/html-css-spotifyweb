@@ -325,18 +325,19 @@ footer {
     line-height:13px;
 }
 
-.track-info span {
+.track-info .song-title {
     font-size: 12px;
 }
 
-.track-actions .fa-heart {
+.song-title:hover {
+    text-decoration: underline;
+}
+
+.track-actions .favourite {
     margin-bottom: 2px;
 }
 
-.track-actions button {
-    background-color: transparent;
-    color: #707278;
-    border: none;
+.track-actions a {
     font-size: 18px;
 }
 
@@ -394,8 +395,6 @@ footer {
     left: 0;
     width: 20%;
 }
-
-
 
 /* volume */
 
@@ -499,7 +498,7 @@ footer {
     }
 
     .volume * {
-        margin-right: 20px;
+        margin-right: 10px;
     }
 }
 
