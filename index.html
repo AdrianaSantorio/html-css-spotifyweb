@@ -17,13 +17,14 @@
         <!-- Sidebar | upper-content flex-item 1-->
         <div class="sidebar">
             <nav class="flex">
-                <!-- nav flex-item 1 -->
-                <!-- nav-top/bottom -->
-                <div>
+                <!-- nav-top |Nav flex-item 1 -->
+                <div class="nav-top">
                     <figure>
+                        <!-- logo -->
                         <a href="#"><img src="img/logo-small.svg" alt="spotify-logo" id="logo-small"></a>
                         <a href="#"><img src="img/logo.svg" alt="spotify-logo" id="logo"></a>
                     </figure>
+                    <!-- main menu -->
                     <ul class="main-menu">
                         <li >
                             <a href="#">
@@ -51,7 +52,8 @@
                             <li>
                                 <a href="#">
                                     <i class="fas fa-plus"></i>
-                                    <span>Crea Playlist</span></a>
+                                    <span>Crea Playlist</span>
+                                </a>
                             </li>
                             <li><a href="#">Nome Playlist</a></li>
                             <li><a href="#">Nome Playlist</a></li>
@@ -100,9 +102,7 @@
                 <nav class="content-nav">
                     <ul class="flex">
                         <li>
-                            <a href="#">in evidenza</a>
-                            <!--  questa non è un hr, è uno pseudoelemento active -->
-                            <hr>
+                            <a href="#" class="active">in evidenza</a>
                         </li>
                         <!-- TO DO: aggiungere sottolinatura -->
                         <li><a href="#"> podcast</a></li>
@@ -174,6 +174,7 @@
 
                         </div>
                     </section>
+                    <!-- Created for -->
                     <section class="created-for">
                         <h2>Creato per John Doe</h2>
                         <span class="text-gray">Più ascolti, più curati saranno i tuoi suggerimenti</span>
@@ -196,6 +197,7 @@
                             </div>
                         </div>
                     </section>
+                    <!-- Popular -->
                     <section class="popular">
                         <h2>Artisti più popolari</h2>
                         <span class="text-gray">Più ascolti, più curati saranno i tuoi suggerimenti</span>
@@ -271,7 +273,6 @@
                 </div>
             </div>
         </div>
-
     </footer>
 </body>
 </html>
