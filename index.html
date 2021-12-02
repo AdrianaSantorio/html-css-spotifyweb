@@ -13,12 +13,12 @@
     <title>Spotify</title>
 </head>
 <body>
-    <div class="flex upper-content">
+    <div class="flex-wrapper upper-content">
         <!-- Sidebar | upper-content flex-item 1-->
         <div class="sidebar">
-            <nav class="flex">
+            <nav class="flex-wrapper">
                 <!-- nav-top |Nav flex-item 1 -->
-                <div class="nav-top">
+                <section class="nav-top">
                     <figure>
                         <!-- logo -->
                         <a href="#"><img src="img/logo-small.svg" alt="spotify-logo" id="logo-small"></a>
@@ -51,7 +51,7 @@
                         <ul>
                             <li>
                                 <a href="#">
-                                    <i class="fas fa-plus"></i>
+                                    <i class="fas fa-plus v-align-middle"></i>
                                     <span>Crea Playlist</span>
                                 </a>
                             </li>
@@ -64,9 +64,9 @@
                             <li><a href="#">Nome Playlist</a></li>
                         </ul>
                     </section>
-                </div>
+                </section>
                 <!-- Profile | nav flex-item 2 -->
-                <div class="profile">
+                <section class="profile">
                     <ul >
                         <!-- download -->
                         <li >
@@ -87,20 +87,20 @@
                             </a>
                         </li>
                     </ul>
-                </div>
+                </section>
             </nav>
         </div>
         <!-- Main | upper-content flex-item 2-->
         <main>
             <!--Content header -->
-            <header class="main-header flex">
+            <header class="main-header flex-wrapper">
                         <a href="#" class="upgrade text-white scale">effettua l' upgrade</a>
             </header>
             <!-- Content -->
             <div class="content">
                 <!-- Menu -->
                 <nav class="content-nav">
-                    <ul class="flex">
+                    <ul class="flex-wrapper">
                         <li>
                             <a href="#" class="active">in evidenza</a>
                         </li>
@@ -116,7 +116,7 @@
                 <section class="content-gallery">
                     <section class="recently-played">
                         <h2>Recently Played</h2>
-                        <div class="flex">
+                        <div class="flex-wrapper">
                             <div class="card">
                                 <figure class="card-cover">
                                     <img src="img/metal_lifting.jpg" alt="Heavy Metal">
@@ -178,7 +178,7 @@
                     <section class="created-for">
                         <h2>Creato per John Doe</h2>
                         <span class="text-gray">Pi&ugrave; ascolti, pi&ugrave; curati saranno i tuoi suggerimenti</span>
-                        <div class="flex">
+                        <div class="flex-wrapper">
                             <div class="card">
                                 <figure class="card-cover">
                                     <img src="img/radar.jpeg" alt="Release Radar">
@@ -201,7 +201,7 @@
                     <section class="popular">
                         <h2>Artisti pi&ugrave; popolari</h2>
                         <span class="text-gray">Pi&ugrave; ascolti, pi&ugrave; curati saranno i tuoi suggerimenti</span>
-                        <div class="flex">
+                        <div class="flex-wrapper">
                             <div class="card">
                                 <figure class="card-cover">
                                     <img src="img/youg.jpeg" alt="Lana Del Rey">
@@ -225,9 +225,9 @@
         </main>
     </div>
     <!-- Footer -->
-    <footer class="flex">
+    <footer class="flex-wrapper">
         <!-- Now-playing | footer flex-item 1-->
-        <div class="now-playing flex">
+        <div class="now-playing flex-wrapper">
             <!-- Track-cover | Now-playing flex-item 1-->
             <div class=" track-cover">
                 <img src="img/sinister.jpeg" alt="Sinister-cover">
@@ -235,7 +235,7 @@
             <!-- track-info | Now-playing flex-item 2-->
             <div class="track-info">
                 <h5 class="album">Sinister</h5>
-                <a href="#" class="song-title text-gray bright">Brano Nome</a>
+                <a href="#" class="song-title text-gray underline">Brano Nome</a>
             </div>
             <!-- track-actions | Now-playing flex-item 3-->
             <div class="track-actions text-gray">
@@ -245,14 +245,14 @@
         </div>
         <!-- Controls | footer flex-item 2-->
         <div class="controls">
-            <div class=" controls-buttons text-align-center">
+            <div class="controls-buttons text-align-center">
                 <button><i class="fas fa-random"></i></button>
                 <button><i class="fas fa-step-backward"></i></button>
                 <button class="scale"><i class="far fa-play-circle play"></i></button>
                 <button><i class="fas fa-step-forward"></i></button>
                 <button><i class="fas fa-redo-alt"></i></button>
             </div>
-            <div class="progress flex">
+            <div class="progress flex-wrapper">
                 <span>0:25</span>
                 <div class="progress-bar bar">
                     <div class="progress-value value">
@@ -263,7 +263,7 @@
             </div>
         </div>
         <!-- Volume | footer flex-item 2-->
-        <div class="volume flex">
+        <div class="volume flex-wrapper">
             <a href="#" class="text-white"><i class="fas fa-th-list"></i></a>
             <a href="#" class="text-white"><i class="fas fa-desktop"></i></a>
             <i class="fas fa-volume-up"></i>

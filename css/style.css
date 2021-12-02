@@ -31,7 +31,7 @@ a:hover {
 /* UTILITIES */
 
 
-/* float */
+/* layout */
 .clearifx::after {
     content: '';
     display: table;
@@ -45,9 +45,8 @@ a:hover {
 .float-right {
     float: right;
 }
-
  
-.flex {
+.flex-wrapper {
     display: flex ;
 }
 
@@ -86,6 +85,10 @@ a:hover {
     height: 2px;
     background-color: chartreuse;
     margin: 3px auto;
+}
+
+.underline:hover {
+    text-decoration: underline;
 }
 
 /* bar */
@@ -129,7 +132,7 @@ a:hover {
 
 /* BODY */
 
-.flex.upper-content {
+.flex-wrapper.upper-content {
     flex-direction: row;
     align-items: stretch;
     height: calc(100vh - 100px);
@@ -201,7 +204,6 @@ a:hover {
     padding: 14px 17px;
     font-size: 24px;
     margin-right: 5px;
-    vertical-align: middle;
 }
 
 /* profile */
@@ -282,7 +284,7 @@ header .upgrade {
 
 /* content nav */
 
-.content-nav ul.flex {
+.content-nav ul.flex-wrapper {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
@@ -298,14 +300,9 @@ header .upgrade {
     text-transform: uppercase;
 }
 
-/* to do: centralizzare uppercase? */
-
-
 /* content gallery */
 
-
-
-.content-gallery .flex {
+.content-gallery .flex-wrapper {
     align-items: flex-start;
     justify-content: flex-start;
     flex-direction: row;
@@ -352,9 +349,6 @@ header .upgrade {
     font-size: 36px;
 }
 
-
-
-
 /* FOOTER */
 
 footer {
@@ -385,10 +379,6 @@ footer {
 
 .track-info .song-title {
     font-size: 12px;
-}
-
-.song-title:hover {
-    text-decoration: underline;
 }
 
 .track-actions .favourite {
@@ -423,7 +413,7 @@ footer {
 
 /* progress bar */
 
-.progress.flex {
+.progress.flex-wrapper {
     margin-top: 15px;
     flex-direction: row;
     align-items: center;
