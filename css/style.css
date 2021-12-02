@@ -93,6 +93,24 @@ a:hover {
     transform: scale(1.2);
 }
 
+/* bar */
+
+.bar {
+    height: 5px;
+    background-color: #585858;
+    border-radius: 3px;
+    position: relative;
+}
+
+.value {
+    height: 5px;
+    background-color: #BDBDBD;
+    border-radius: 3px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
 
 /* BODY */
 
@@ -378,21 +396,11 @@ footer {
 } 
 
 .controls .progress-bar {
-    height: 5px;
-    background-color: #585858;
-    border-radius: 3px;
-    position: relative;
+    margin: 0 10px;
     flex-grow: 1;
-    margin: 0 10px
 }
 
 .progress-bar .progress-value {
-    height: 5px;
-    background-color: #BDBDBD;
-    border-radius: 3px;
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 20%;
 }
 
@@ -409,20 +417,10 @@ footer {
 }
 
 .volume-bar {
-    height: 5px;
-    background-color: #585858;
-    border-radius: 3px;
-    position: relative;
     flex-grow: 1;
 }
 
 .volume-bar .volume-value {
-    height: 5px;
-    background-color: #BDBDBD;
-    border-radius: 3px;
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 20%;
 }
 
