@@ -353,7 +353,7 @@ header .upgrade {
     overflow: hidden;
 }
 
-.content-gallery figure:hover {
+.content-gallery img:hover {
     filter: brightness(70%);
 }
 
@@ -367,13 +367,12 @@ header .upgrade {
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 36px;
-    
 }
 
 .content-gallery figure:hover::after {
     display: inline-block;
-    filter: brightness(120%);
 }
+
 
 
 /* FOOTER */
