@@ -24,7 +24,7 @@ a {
     text-decoration: none;
 }
 
-nav a:hover {
+a:hover {
     filter: brightness(200%);
 }
 
@@ -177,11 +177,11 @@ nav a:hover {
 
 .profile li {
     margin:10px 0;
+    text-align: center;
 }
 
 .download {
     font-size: 12px;
-    text-align: center;
 }
 
 #download {
@@ -228,6 +228,10 @@ header .upgrade {
     border-radius: 25px;
     padding: 15px 35px;
     line-height: 80px;
+}
+
+.upgrade:hover {
+    transform: scale(2);
 }
 
 /* CONTENT */
@@ -453,6 +457,10 @@ footer {
 
     .profile hr {
         display: block;
+    }
+
+    .profile li {
+        text-align: left;
     }
 
     .download {
