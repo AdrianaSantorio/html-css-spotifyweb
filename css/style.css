@@ -176,6 +176,12 @@ a:hover {
     vertical-align: middle;
 }
 
+/* nav-top */
+
+.sidebar .nav-top {
+    flex-shrink: 1;
+}
+
 /* main menu */
 
 .main-menu li {
@@ -189,10 +195,21 @@ a:hover {
     margin-top: 20px;
 }
 
+.playlist>.flex-wrapper {
+    flex-direction: column;
+}
+
 .playlist h3 {
     text-transform: uppercase;
     margin-bottom: 20px;
 }
+
+.playlist ul {
+    flex-shrink: 1;
+    flex-basis: 290px;
+    overflow-y: auto;
+}
+
 .playlist li {
     margin:20px 0;
 }
@@ -206,6 +223,10 @@ a:hover {
 }
 
 /* profile */
+
+.profile {
+    flex-shrink: 0;
+}
 
 .profile hr {
     height: 1px;
@@ -311,7 +332,12 @@ header .upgrade {
     flex-basis: 50%;
     padding: 15px;
     text-align: center;
+    transition: (6s);
 } 
+
+.content-gallery .card:hover {
+    transform: scale(1.1);
+}
 
  .card-text {
     overflow-wrap: break-word;
@@ -341,6 +367,7 @@ header .upgrade {
     transform: translate(-50%, -50%);
     font-size: 36px;
 }
+
 
 /* FOOTER */
 
