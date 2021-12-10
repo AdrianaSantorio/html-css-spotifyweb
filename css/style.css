@@ -134,7 +134,7 @@ a:hover {
 .flex-wrapper.upper-content {
     flex-direction: row;
     align-items: stretch;
-    height: calc(100vh - 100px);
+    max-height: calc(100vh - 100px);
 }
 
 /* SIDEBAR */
@@ -206,9 +206,11 @@ a:hover {
 
 .playlist ul {
     flex-shrink: 1;
-    flex-basis: 290px;
+    flex-basis: 300px;
     overflow-y: auto;
 }
+
+/* wtf */
 
 .playlist li {
     margin:20px 0;
