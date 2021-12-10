@@ -180,6 +180,7 @@ a:hover {
 
 .sidebar .nav-top {
     flex-shrink: 1;
+    overflow: hidden;
 }
 
 /* main menu */
@@ -206,7 +207,7 @@ a:hover {
 
 .playlist ul {
     flex-shrink: 1;
-    height: calc(100vh -550px);
+    height: calc(100vh - 550px);
     overflow-y: auto;
 }
 
