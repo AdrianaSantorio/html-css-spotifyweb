@@ -75,7 +75,7 @@ a:hover {
 /* effects */
 
 .scale:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 .active::after {
@@ -109,7 +109,7 @@ a:hover {
     left: 0;
 }
 
-.value:hover {
+.bar:hover .value {
     background-color: chartreuse;
 }
 
@@ -125,7 +125,7 @@ a:hover {
     transform: translate(50% , -50%);
 }
 
-.value:hover .marker {
+.bar:hover .marker {
     display: inline-block; 
 }
 
@@ -206,7 +206,7 @@ a:hover {
 
 .playlist ul {
     flex-shrink: 1;
-    flex-basis: 300px;
+    height: calc(100vh - 100px - 450px);
     overflow-y: auto;
 }
 
@@ -272,7 +272,7 @@ main {
     background-color: rgba(8, 11, 18, 0.5);
     height: 80px;
     width: calc(100% - 80px);
-    padding-right: 30px;
+    padding-right: 40px;
     position: fixed;
     top:0;
     right: 0;
@@ -336,10 +336,6 @@ header .upgrade {
     text-align: center;
     transition: (6s);
 } 
-
-.content-gallery .card:hover {
-    transform: scale(1.1);
-}
 
  .card-text {
     overflow-wrap: break-word;
